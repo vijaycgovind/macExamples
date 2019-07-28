@@ -1,7 +1,7 @@
 
 node
 {
-    def mp = tool name: '/Users/vijaygovind/apache-maven-3.5.4', type: 'maven'
+   // def mp = tool name: '/Users/vijaygovind/apache-maven-3.5.4', type: 'maven'
   
    stage('Preparation') { 
       // Get some code from a GitHub repository
