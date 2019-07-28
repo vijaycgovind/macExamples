@@ -10,18 +10,5 @@ node
       
    }
      
-   stage('Clean') {
-      // Run the maven clean
-    
-      sh "${mp}/bin/mvn clean"
-   
-   }
-    stage ('Test')
-    {
-      sh "${mp}/bin/mvn test"
-   }
-   
-   stage('----PACKAGE-----') {
-      sh "${mp}/bin/mvn package"
-   }
+  
 }
