@@ -1,0 +1,30 @@
+node
+{
+    def mvnHome = tool name: 'maven3', type: 'maven'
+    
+   stage('=============================Preparation====================================') { 
+      // Get some code from a GitHub repository
+      echo 'About to hit respository from github'
+      git 'https://github.com/vijaycgovind/macExamples.git'
+      
+   }
+   
+   stage('Clean') {
+      // Run the maven clean
+    // def mp = tool name: '/Users/vijaygovind/apache-maven-3.5.4', type: 'maven'
+      echo 'CLEEEEEAAAAAANING'
+      
+      
+      sh "${mvnHome}/bin/mvn clean"
+   
+   }
+    stage ('---------------------Test---------------------------------')
+    {
+         sh "${mvnHome}/bin/mvn test"
+   }
+   
+   stage('------------------------PACKAGE-------------------------') 
+   {
+    sh "${mvnHome}/bin/mvn package"
+   }
+}
