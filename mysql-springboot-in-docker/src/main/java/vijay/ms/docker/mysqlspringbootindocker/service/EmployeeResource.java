@@ -20,6 +20,7 @@ public class EmployeeResource {
 	empRepository er;
 	
 	
+	
 	@GetMapping(value="/all")
 	public List <Employees> getAllEmp()
 	{
