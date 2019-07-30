@@ -1,5 +1,6 @@
 node
 {
+    def mvnHome = tool name: 'maven3', type: 'maven'
     
    stage('=============================Preparation====================================') { 
       // Get some code from a GitHub repository
@@ -12,7 +13,7 @@ node
       // Run the maven clean
     // def mp = tool name: '/Users/vijaygovind/apache-maven-3.5.4', type: 'maven'
       echo 'CLEEEEEAAAAAANING'
-      def mvnHome = tool name: 'maven3', type: 'maven'
+      
       
       sh "${mvnHome}/bin/mvn clean"
    
