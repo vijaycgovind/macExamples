@@ -7,4 +7,5 @@ import vijay.ms.docker.mysqlspringbootindocker.model.Employees;
 
 public interface empRepository extends JpaRepository <Employees,Integer>{
 
+	
 }

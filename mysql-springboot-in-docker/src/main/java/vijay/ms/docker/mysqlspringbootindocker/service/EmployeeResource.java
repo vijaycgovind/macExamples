@@ -24,7 +24,6 @@ public class EmployeeResource {
 	public List <Employees> getAllEmp()
 	{
 	  return er.findAll();
-	}
-	
+	}	
 
 }

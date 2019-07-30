@@ -10,6 +10,7 @@ public class MysqlSpringbootInDockerApplication {
 		SpringApplication.run(MysqlSpringbootInDockerApplication.class, args);
 		System.out.println("JAI HANUAN AND VINAYAKA");
 		
+		
 	}
 
 }
